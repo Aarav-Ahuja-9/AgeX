@@ -3,6 +3,9 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: "Lato", sans-serif;
+    transition: all 0.3s ease;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -13,7 +16,7 @@ body {
 }
 
 nav {
-    background: rgba(217, 217, 217, 0.20);
+    background: #d9d9d933;
     backdrop-filter: blur(1px);
     display: flex;
     width: 80%;
@@ -67,4 +70,57 @@ nav button {
 nav button a {
     color: white;
     text-decoration: none;
+}
+
+.hero {
+    margin-top: 170px;
+    margin-left: -1350px;
+}
+
+.hero h1 {
+    font-size: 60px;
+    color: #2A5DB0;
+    margin-bottom: 10px;
+}
+
+.hero h1 span {
+    padding: 10px;
+    padding-bottom: 5px;
+    color: white;
+    border-radius: 10px;
+    padding-top: 0;
+    height: fit-content;
+    background: linear-gradient(90deg, #FF8A00 0%, #E52E71 100%);
+}
+
+.hero p {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.hero button {
+    border: 0;
+    outline: 0;
+    background: #2A5DB0;
+    padding: 15px 17px 15px 17px;
+    font-size: 28px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.hero button a {
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.hero button:hover {
+    transform: scale(1.10);
+    background: #d9d9d977;
+    filter: blur(0.5px);
+}
+
+.hero button:hover a {
+    color: #000000;
 }
