@@ -13,6 +13,7 @@ body {
     flex-direction: column;
     padding-top: 20px;
     align-items: center;
+    background: skyblue;
 }
 
 nav {
@@ -27,6 +28,11 @@ nav {
     padding-top: 10px;
     padding-bottom: 10px;
     position: fixed;
+    border: white 2px solid;
+    outline: 3px solid white;
+    /* Creates an extra layer outside the border */
+    outline-offset: 5px;
+    /* Moves outline away from border */
 }
 
 nav img {
@@ -73,14 +79,14 @@ nav button a {
 }
 
 .hero {
-    margin-top: 170px;
-    margin-left: -1350px;
+    margin-top: 220px;
+    margin-left: -1100px;
 }
 
 .hero h1 {
-    font-size: 60px;
+    font-size: 80px;
     color: #2A5DB0;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .hero h1 span {
@@ -94,8 +100,8 @@ nav button a {
 }
 
 .hero p {
-    font-size: 30px;
-    margin-bottom: 30px;
+    font-size: 40px;
+    margin-bottom: 50px;
 }
 
 .hero button {
@@ -123,4 +129,20 @@ nav button a {
 
 .hero button:hover a {
     color: #000000;
+}
+
+
+.feature-text {
+    text-align: center;
+    font-size: 28px;
+    margin-top: 100px;
+}
+
+.feature-cards {
+    display: flex;
+    flex-direction: row;
+}
+
+.feature-cards .card-1 {
+    width: 50px;
 }
